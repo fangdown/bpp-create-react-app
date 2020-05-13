@@ -21,8 +21,6 @@ class Demo extends React.Component {
   }
   filterTreeNode = (inputValue, treeNode) => {
     const title = treeNode.props.title
-    console.log('title', title)
-    console.log('typeof title', typeof title)
     if (title && typeof title === 'string' && title.indexOf(inputValue) > -1) {
       return true
     } else if (
